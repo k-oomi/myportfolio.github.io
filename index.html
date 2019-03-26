@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>portfolio</title>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link rel ="stylesheet" href ="stylesheet03.css">
+<script src="script.js"></script>
+    
+  
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<body class="drawer drawer--left">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#">Menu</a></li>
+        <li><a class="drawer-menu-item" href="https://github.com/k-oomi">github</a></li>
+        <li><a class="drawer-menu-item" href="http://dainan.www2.jp">Wordpress</a></li>
+            <li><a class="drawer-menu-item" href="#contact">contact</a></li>
+		   <li><a class="drawer-menu-item" href="#"><span class="fab fa-twitter">Twitter</span></a></li>
+		  <li><a class="drawer-menu-item" href="#"><span class="fab fa-instagram"> Instagram</span> </a></li>
+      </ul>
+    </nav>
+      
+  </header>
+
+    <header id="headermain">
+    <div class = "head">
+        <h1>My Portfolio</h1>
+        
+        
+        </div>
+    </header>
+	
+
+<div id ="main">
+	 <div class="contents">
+    <div id="background">
+    <h1>self‐introduction</h1>
+		<p>Hello Wold!!<br>福井県あわら市<br>プログラム言語　：Ｊａｖａ,ＰＨＰ，jQuery勉強中です<br>資格、試験　：　ＩＴパスポート、ＨＴＭＬＬWebクリエーター試験　<br>基本情報技術者試験勉強中です</p>
+		
+		<p><strong>Type</strong><br>筋トレ、サーフィン</p>
+    </div>
+</div>
+  
+<div class = "topl" id ="box">
+     <div class="mainmask">
+    Java-----
+		 <div class = "boxchild"><p><a href="">Java</a></P></div>
+         </div>
+    </div>
+
+    <div class = "topr" id ="box"><div class="mainmask">PHP MySQL<div class = "boxchild1"><p><a href="">PHP</a></p></div></div></div>
+<div class = "downl"id ="box"><div class="mainmask">WordPress<div class = "boxchild2"><p><a href="http://dainan.www2.jp">WordPress</a></p></div></div></div>
+	<div class = "downr" id ="box"><div class="mainmask">and More<div class = "boxchild3"><p><a href="">
+Other</a></p></div></div></div>
+
+<div id = "temp"></div><!-- 空要素 -->
+	
+	<footer id="contact">
+	<article>
+			<h1>contact</h1>
+			<p>お問い合わせは、下記フォームよりお気軽にお寄せください。</p>
+			<ul>
+				<li>必要事項を記入し、「確認する」をクリックしてください。</li>
+				<li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+			</ul>
+			<form action="#">
+				<p><label>お名前（必須）<br>
+				<input type="text" name="name" required></label></p>
+				<p><label>メールアドレス（必須）<br>
+				<input type="email" name="mail" required></label></p>
+				<p>お問い合わせ種類<br>
+				<label><input type="radio" name="kind" value="0">事前のご相談</label>　<label><input type="radio" name="kind" value="1">その他</label></p>
+				<p><label>内容<br>
+				<textarea name="comment"></textarea></label></p>
+				<p><input type="submit" value="確認する"></p>
+			</form>
+		</article>
+
+	</footer>
+
+</div>
+ <video controls autoplay loop><source src="mp4/1739010.mp4"></video>
+</body>
+    
+        <script type="text/javascript">
+         $(document).ready(function() {
+  $('.drawer').drawer();
+});
+         </script>
+     <script type="text/javascript">
+         $('.drawer').drawer({
+  class: {
+    nav: 'drawer-nav',
+    toggle: 'drawer-toggle',
+    overlay: 'drawer-overlay',
+    open: 'drawer-open',
+    close: 'drawer-close',
+    dropdown: 'drawer-dropdown'
+  },
+  iscroll: {
+    // Configuring the iScroll
+    // https://github.com/cubiq/iscroll#configuring-the-iscroll
+    mouseWheel: true,
+    preventDefault: false
+  },
+  showOverlay: true
+});
+        
+    
+    </script>
+     <script type="text/javascript">
+    $('.drawer').on('drawer.opened', function(){});
+         $('.drawer').on('drawer.closed', function(){});
+         $('.drawer').drawer('toggle');
+         $('.drawer').drawer('destroy');
+       
+    </script>
+    
+    <script type="text/javascript">
+    $('.drawer').drawer('open');
+        $('.drawer').drawer('close');
+       
+    </script>
+    
+    <script>
+    $(function() {
+  $('.topl').hover(
+    function(){
+       $('.boxchild').slideDown('slow');
+    },
+    function(){
+      $('.boxchild').slideUp('slow');
+    }
+    );
+        
+          $('.topr').hover(
+    function(){
+       $('.boxchild1').slideDown('slow');
+    },
+    function(){
+      $('.boxchild1').slideUp('slow');
+    }
+    );
+       
+            $('.downl').hover(
+    function(){
+       $('.boxchild2').slideDown('slow');
+    },
+    function(){
+      $('.boxchild2').slideUp('slow');
+    }
+    );
+               $('.downr').hover(
+    function(){
+       $('.boxchild3').slideDown('slow');
+    },
+    function(){
+      $('.boxchild3').slideUp('slow');
+    }
+    );
+  
+});
+    </script>
+    
+</html>
